@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Minha Página</title>
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-</head>
-<body>
-<div class="container">
+<?php require_once 'head.php';?>
     <div class="row col-md-6 col-md-offset-3">
         <form>
             <div class="form-group">
@@ -21,8 +13,4 @@
         </form>
     </div>
 
-</div>
-
-
-</body>
-</html>
+<?php require_once 'footer.php';?>
