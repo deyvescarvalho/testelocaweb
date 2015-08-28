@@ -1,0 +1,12 @@
+{
+    "name": "deyves-dev/formulario-exemplo",
+    "authors": [
+        {
+            "name": "Deyves Carvalho",
+            "email": "deyvescarvalho@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "^3.3"
+    }
+}
