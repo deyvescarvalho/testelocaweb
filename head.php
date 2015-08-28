@@ -9,7 +9,6 @@
 <div class="container">
     <nav class="row">
         <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
             <li role="presentation"><a href="index.php">Início</a></li>
             <li role="presentation"><a href="formulario.php">Contato</a></li>
             <li role="presentation"><a href="trabalho.php">Trabalho</a></li>
