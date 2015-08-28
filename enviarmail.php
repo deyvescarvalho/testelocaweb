@@ -6,8 +6,6 @@ $headers = 'From: webmaster@example.com' . "\r\n" .
     'Reply-To: webmaster@example.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-mail
-
 if(mail($to, $subject, $message, $headers)){
     echo "Mensagem enviada com sucesso";
 }else{
