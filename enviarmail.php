@@ -1,15 +1,25 @@
 <?php
 
-$url = 'https://api.sendgrid.com/api/mail.send.json';
+$url = 'https://api.sendgrid.com/';
 $user = 'deyves';
 $pass = 'q13791919';
+
+$json_string = array(
+
+    'to' => array(
+        'deyvescarvalho@gmail.com'
+    ),
+    'category' => 'Assunto'
+);
+
 
 $params = array(
     'api_user'  => $user,
     'api_key'   => $pass,
+    'x-smtpapi' => json_encode($json_string),
     'to'        => 'deyvescarvalho@gmail.com',
-    'subject'   => 'Email de contato do site ',
-//    'html'      => 'teste de email',
+    'subject'   => 'testing from curl',
+    'html'      => 'testing body',
     'text'      => 'testing body',
     'from'      => 'deyvescarvalho@gmail.com',
 );
@@ -34,10 +44,6 @@ $response = curl_exec($session);
 curl_close($session);
 
 // print everything out
-//print_r($response);
-if($response){
-    echo 'Email enviado com sucesso';
-}else{
-    echo ' Nada enviado !';
-}
+print_r($response);
+
 ?>
