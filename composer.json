@@ -9,6 +9,6 @@
     "minimum-stability" : "dev",
     "require": {
         "twbs/bootstrap": "^3.3",
-        "sendgrid/smtpapi": "~0.5"
+        "sendgrid/sendgrid": "~3.2"
     }
 }
