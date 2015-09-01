@@ -8,9 +8,9 @@ $params = array(
     'api_user'  => $user,
     'api_key'   => $pass,
     'to'        => 'deyvescarvalho@gmail.com',
-    'subject'   => 'testing from curl',
-    'html'      => 'testing body',
-    'text'      => 'testing body',
+    'subject'   => 'Email de contato do site ',
+    'html'      => 'teste de email',
+//    'text'      => 'testing body',
     'from'      => 'deyvescarvalho@gmail.com',
 );
 
