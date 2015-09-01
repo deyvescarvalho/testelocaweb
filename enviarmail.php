@@ -9,8 +9,8 @@ $params = array(
     'api_key'   => $pass,
     'to'        => 'deyvescarvalho@gmail.com',
     'subject'   => 'Email de contato do site ',
-    'html'      => 'teste de email',
-//    'text'      => 'testing body',
+//    'html'      => 'teste de email',
+    'text'      => 'testing body',
     'from'      => 'deyvescarvalho@gmail.com',
 );
 
@@ -34,6 +34,10 @@ $response = curl_exec($session);
 curl_close($session);
 
 // print everything out
-print_r($response);
-
+//print_r($response);
+if($response){
+    echo 'Email enviado com sucesso';
+}else{
+    echo ' Nada enviado !';
+}
 ?>
