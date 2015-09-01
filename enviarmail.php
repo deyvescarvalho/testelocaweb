@@ -1,6 +1,6 @@
 <?php
 
-$url = 'https://api.sendgrid.com/';
+$url = 'https://api.sendgrid.com/api/mail.send.json';
 $user = 'deyves';
 $pass = 'q13791919';
 
