@@ -11,7 +11,7 @@ $params = array(
     'subject'   => 'testing from curl',
     'html'      => 'testing body',
     'text'      => 'testing body',
-    'from'      => 'example@sendgrid.com',
+    'from'      => 'deyvescarvalho@gmail.com',
 );
 
 
