@@ -1,4 +1,5 @@
 <?php
+require("sendgrid-php/sendgrid-php.php");
 
 $sendgrid = new SendGrid('deyves', 'q13791919');
 $email = new SendGrid\Email();
@@ -22,5 +23,4 @@ try {
         echo $er;
     }
 }
-
 ?>
