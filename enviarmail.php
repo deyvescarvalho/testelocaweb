@@ -55,4 +55,5 @@ try{
 //        echo $er;
 //    }
 //}
+require_once 'footer.php';
 ?>
