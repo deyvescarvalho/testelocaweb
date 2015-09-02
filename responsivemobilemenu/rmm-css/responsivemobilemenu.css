@@ -9,10 +9,6 @@ Author URI: http://xmacros.com
 License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
 
 */
-nav, ul, li, body{
-	margin: 0 !important;
-	padding: 0 !important;
-}
 
 .rmm {
 	display:block;
