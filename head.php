@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Minha Página</title>
-    <link rel="stylesheet"  href="bower_components/bootstrap/dist/css/bootstrap.css" media="screen">
+    <link rel="stylesheet"  href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
 </head>
 <body>
 <div class="container">
