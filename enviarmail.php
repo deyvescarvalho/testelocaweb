@@ -11,12 +11,12 @@ $mensagem = $_POST['mensagem'];
 /*////*/
 $to = "deyvescarvalho@gmail.com";
 $subject = "Testando novo modo";
-$message = "Nome: ". $nome . "<br/>";
-$message .= "Email: ". $email . "<br/>";
-$message .= "Cidade: ". $cidade . "<br/>";
-$message .= "Estado: ". $estado . "<br/>";
-$message .= "Rua: ". $rua . "<br/>";
-$message .= "Mensagem: ". $mensagem . "<br/>";
+$message = "Nome: ". $nome . "\n<br/>";
+$message .= "Email: ". $email . "\n<br/>";
+$message .= "Cidade: ". $cidade . "\n<br/>";
+$message .= "Estado: ". $estado . "\n<br/>";
+$message .= "Rua: ". $rua . "\n<br/>";
+$message .= "Mensagem: ". $mensagem . "\n<br/>";
 $header = "MIME-Version: 1.0\n";
 $header = "Content-type: text/html; charset=iso-8859-1\n";
 $header = "From: $email\n";
