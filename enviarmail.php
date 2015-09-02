@@ -22,11 +22,14 @@ $header = "Content-type: text/html; charset=iso-8859-1\n";
 $header = "From: $email\n";
 
 
-mail($to, $subject, $message, $header);
-
-echo "Mensagem enviada com Sucesso...";
-
-http_redirect('formulario.php');
+try{
+    mail($to, $subject, $message, $header);
+    echo "Mensagem enviada com Sucesso...";
+    $redirect = "formulario.php";
+    header("location:$redirect");
+}catch (mysqli_sql_exception $e) {
+    $e->getMessage();
+}
 
 //require("sendgrid-php/sendgrid-php.php");
 //
