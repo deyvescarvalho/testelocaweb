@@ -6,7 +6,9 @@
             "email": "deyvescarvalho@gmail.com"
         }
     ],
+    "minimum-stability" : "dev",
     "require": {
-        "twbs/bootstrap": "^3.3"
+        "twbs/bootstrap": "^3.3",
+        "sendgrid/sendgrid": "~3.2"
     }
 }

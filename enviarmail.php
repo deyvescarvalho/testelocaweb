@@ -1,39 +1,54 @@
+
 <?php
+require_once 'head.php';
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$cidade = $_POST['cidade'];
+$estado = $_POST['estado'];
+$rua = $_POST['rua'];
+$mensagem = $_POST['mensagem'];
 
-$url = 'https://api.sendgrid.com/';
-$user = 'deyves';
-$pass = 'q13791919';
+/*////*/
+$to = "deyvescarvalho@gmail.com";
+$subject = "Testando novo modo";
+$message = "Nome: ". $nome . "<br/>";
+$message .= "Email: ". $email . "<br/>";
+$message .= "Cidade: ". $cidade . "<br/>";
+$message .= "Estado: ". $estado . "<br/>";
+$message .= "Rua: ". $rua . "<br/>";
+$message .= "Mensagem: ". $mensagem . "<br/>";
+$header = "MIME-Version: 1.0\n";
+$header = "Content-type: text/html; charset=iso-8859-1\n";
+$header = "From: $email\n";
 
-$params = array(
-    'api_user'  => $user,
-    'api_key'   => $pass,
-    'to'        => 'deyvescarvalho@gmail.com',
-    'subject'   => 'testing from curl',
-    'html'      => 'testing body',
-    'text'      => 'testing body',
-    'from'      => 'example@sendgrid.com',
-);
+
+mail($to, $subject, $message, $header);
+
+echo "Mensagem enviada com Sucesso...";
 
 
-$request =  $url.'api/mail.send.json';
-
-// Generate curl request
-$session = curl_init($request);
-// Tell curl to use HTTP POST
-curl_setopt ($session, CURLOPT_POST, true);
-// Tell curl that this is the body of the POST
-curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
-// Tell curl not to return headers, but do return the response
-curl_setopt($session, CURLOPT_HEADER, false);
-// Tell PHP not to use SSLv3 (instead opting for TLS)
-curl_setopt($session, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
-curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
-
-// obtain response
-$response = curl_exec($session);
-curl_close($session);
-
-// print everything out
-print_r($response);
-
+//require("sendgrid-php/sendgrid-php.php");
+//
+//$sendgrid = new SendGrid('deyves', 'q13791919');
+//$email = new SendGrid\Email();
+//$email
+//    ->addTo('deyvescarvalho@gmail.com')
+//    ->setFrom('deyvescarvalho@gmail.com')
+//    ->setSubject('Subject goes here')
+//    ->setText('Hello World!')
+//    ->setHtml('<strong>Hello World!</strong>')
+//;
+//
+//$sendgrid->send($email);
+//
+//// Or catch the error
+//
+//try {
+//    $sendgrid->send($email);
+//} catch(\SendGrid\Exception $e) {
+//    echo $e->getCode();
+//    foreach($e->getErrors() as $er) {
+//        echo $er;
+//    }
+//}
 ?>
