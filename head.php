@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Minha Página</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet"  href="bower_components/bootstrap/dist/css/bootstrap.css" media="screen">
 </head>
 <body>
 <div class="container">

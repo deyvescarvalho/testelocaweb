@@ -1,5 +1,5 @@
 <?php require_once 'head.php';?>
-    <div class="row col-md-5 col-md-offset-3">
+    <div class="row col-xs-12">
         <form method="post" action="enviarmail.php">
             <div class="form-group col-xs-12">
                 <label for="nome">Nome:</label>

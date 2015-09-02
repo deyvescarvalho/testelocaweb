@@ -20,17 +20,21 @@ $message .= "Mensagem: ". $mensagem . "\n<br/>";
 $header = "MIME-Version: 1.0\n";
 $header = "Content-type: text/html; charset=iso-8859-1\n";
 $header = "From: $email\n";
-
+$redirect = "formulario.php";
 
 try{
     mail($to, $subject, $message, $header);
     echo "Mensagem enviada com Sucesso...";
-    $redirect = "formulario.php";
-    header("location:$redirect");
 }catch (mysqli_sql_exception $e) {
     $e->getMessage();
 }
 
+?>
+<br><br>
+<div class="col-xs-12">
+    <a href="formulario.php" class="col-xs-12 btn btn-success">Voltar</a>
+</div>
+<?php
 //require("sendgrid-php/sendgrid-php.php");
 //
 //$sendgrid = new SendGrid('deyves', 'q13791919');
