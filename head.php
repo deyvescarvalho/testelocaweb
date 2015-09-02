@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Minha Página</title>
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="responsivemobilemenu/rmm-js/responsivemobilemenu.js"></script>
     <link rel="stylesheet" href="responsivemobilemenu/rmm-css/responsivemobilemenu.css">
     <link rel="stylesheet"  href="bower_components/bootstrap/dist/css/bootstrap.css">
