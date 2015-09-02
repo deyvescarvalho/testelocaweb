@@ -26,6 +26,7 @@ mail($to, $subject, $message, $header);
 
 echo "Mensagem enviada com Sucesso...";
 
+http_redirect('formulario.php');
 
 //require("sendgrid-php/sendgrid-php.php");
 //
